@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WE OFF THE GRID — Cibulova Kočkostřelecká Prekérie</title>
+  <meta name="description" content="Demonstrace efektu Cibulové Kočkostřelecké Prekérie — jednoduchá responzivní stránka s layoutem přes CSS Grid.">
+  <meta name="author" content="Samuel Čermák">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.example/">
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="WE OFF THE GRID — Cibulova Kočkostřelecká Prekérie">
+  <meta property="og:description" content="Jednoduchá stránka s demonstrací efektu Cibulové Kočkostřelecké Prekérie.">
+  <meta property="og:image" content="pics/prekr.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.example/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured data (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "WE OFF THE GRID",
+    "url": "https://yourdomain.example/",
+    "description": "Jednoduchá demonstrační stránka."
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>WE OFF THE GRID — Cibulova Kočkostřelecká Prekérie</h1>
+    <nav aria-label="Hlavní navigace">
+      <ul>
+        <li><a href="#">Domů</a></li>
+        <li><a href="#">O Cibulovi</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>O projektu</h2>
+      <p>Projekt je demonstrací efektu <strong>Cibulové Kočkostřelecké Prekérie</strong>.</p>
+      <img src="pics/cibi.png" alt="Ilustrace Cibi" class="responsive-img">
+    </section>
+
+    <section>
+      <h2>Obsah</h2>
+      <h3>Krátký přehled</h3>
+      <p>Cibula pochází z dalekého třetího světa... (obsah uprav dle potřeby)</p>
+      <img src="pics/prekr.png" alt="Prekr ilustrace" class="responsive-img">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Cibulova Kočkostřelecká Prekérie</p>
+  </footer>
+
+  <script>
+    // aktuální rok v patičce
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
