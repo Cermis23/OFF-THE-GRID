@@ -1,0 +1,67 @@
+/* Základní reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Načtení fontu */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fontana/BebasNeue-Regular.ttf') format('truetype');
+}
+
+/* Globální nastavení pro body */
+body {
+    font-family: 'BebasNeue', sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* Grid layout */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header, footer {
+    background: #222;
+    color: #e240fb;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: rgb(226, 133, 229);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover efekt */
+nav a:hover {
+    color: #ff00d9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+section {
+    background: #d384db;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
